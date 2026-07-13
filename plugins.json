@@ -1,0 +1,159 @@
+[
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=%size%",
+        "jarFileSize": 54496,
+        "fileHash": "sha256-722433091ea0c5280b99c24d87f5192c115be199c09aee90d610a6990567201b",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/krmardjoun/cloudstream-sources",
+        "fileSize": 12964,
+        "status": 1,
+        "authors": [
+            "Luna712"
+        ],
+        "tvTypes": [
+            "Others"
+        ],
+        "version": 4,
+        "internalName": "DailymotionProvider",
+        "jarUrl": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/DailymotionProvider.jar",
+        "description": "Watch content from Dailymotion",
+        "url": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/DailymotionProvider.cs3",
+        "name": "DailymotionProvider",
+        "jarHash": "sha256-aa62899c451151f77fb8839733247d2a06f428ceb2e90bd4468e5ab8fecf132e"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=archive.org&sz=%size%",
+        "jarFileSize": 130049,
+        "fileHash": "sha256-0ce8f0efa6911aafe3afc18340d5cc0813a7e4da9e00a47830bb64e3a54e2efb",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/krmardjoun/cloudstream-sources",
+        "fileSize": 29424,
+        "status": 1,
+        "authors": [
+            "Luna712"
+        ],
+        "tvTypes": [
+            "Others"
+        ],
+        "version": 1,
+        "internalName": "InternetArchiveProvider",
+        "jarUrl": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/InternetArchiveProvider.jar",
+        "description": "Watch content from the Internet Archive at archive.org",
+        "url": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/InternetArchiveProvider.cs3",
+        "name": "InternetArchiveProvider",
+        "jarHash": "sha256-6b9b7974f94811a0d16ae2d3748cf52da19f142b963ceb5a58408214716c8b73"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=invidious.io&sz=%size%",
+        "jarFileSize": 68266,
+        "fileHash": "sha256-1f40aaa92351acb5d7ee0ce13e7caa0625ad40afb9853e7cdf5d18ee3bd6ce0e",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/krmardjoun/cloudstream-sources",
+        "fileSize": 15286,
+        "status": 1,
+        "authors": [
+            "Cloudburst"
+        ],
+        "tvTypes": [
+            "Others"
+        ],
+        "version": 9,
+        "internalName": "InvidiousProvider",
+        "jarUrl": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/InvidiousProvider.jar",
+        "description": "Watch content from any invidious instance",
+        "url": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/InvidiousProvider.cs3",
+        "name": "InvidiousProvider",
+        "jarHash": "sha256-a5f8410fe3711b6769e5d97bb9244d751f5f6ac78d33242c1723b58a0199207f"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=iptv-org.github.io&sz=%size%",
+        "jarFileSize": 47669,
+        "fileHash": "sha256-bec40aa67af2455a1ebce1aad01f15341f1c357de563f6465c8def8b1e24e723",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/krmardjoun/cloudstream-sources",
+        "fileSize": 13337,
+        "status": 1,
+        "authors": [
+            "krm"
+        ],
+        "tvTypes": [
+            "Live"
+        ],
+        "version": 1,
+        "internalName": "IPTVProvider",
+        "jarUrl": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/IPTVProvider.jar",
+        "description": "Lecteur IPTV / M3U \u2014 colle ta propre playlist (M3U ou Xtream)",
+        "url": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/IPTVProvider.cs3",
+        "name": "IPTVProvider",
+        "jarHash": "sha256-eb60ecea8bcf536866bcbcb9e0db81718c6127bc66cd9fbf8c5496b7e2f6ed70"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=example.com&sz=%size%",
+        "jarFileSize": 32804,
+        "fileHash": "sha256-787ce84a51252e5a7ad9e1e90b54e6accc2405ed2d96de767f8b80e4eccc4521",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/krmardjoun/cloudstream-sources",
+        "fileSize": 9786,
+        "status": 3,
+        "authors": [
+            "krm"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "SiteTemplateProvider",
+        "jarUrl": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/SiteTemplateProvider.jar",
+        "description": "MOD\u00c8LE \u2014 squelette comment\u00e9 pour scraper un site (\u00e0 personnaliser)",
+        "url": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/SiteTemplateProvider.cs3",
+        "name": "SiteTemplateProvider",
+        "jarHash": "sha256-97e7717f285844aca1f3848b55effff3750d7be10bfa2954321ebf3f7ed2a9d9"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=twitch.tv&sz=%size%",
+        "jarFileSize": 56997,
+        "fileHash": "sha256-a7cc95f77bbd00a311d122201c63babe70b63fb398641fa28bf2b2c77346150a",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/krmardjoun/cloudstream-sources",
+        "fileSize": 15239,
+        "status": 1,
+        "authors": [
+            "CranberrySoup"
+        ],
+        "tvTypes": [
+            "Live"
+        ],
+        "version": 2,
+        "internalName": "TwitchProvider",
+        "jarUrl": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/TwitchProvider.jar",
+        "description": "Watch livestreams from Twitch",
+        "url": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/TwitchProvider.cs3",
+        "name": "TwitchProvider",
+        "jarHash": "sha256-88086809ed6ccc21cca611ce2ba4f2563b1082486ffda3daa6350da9126b548b"
+    },
+    {
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/3840px-YouTube_full-color_icon_%282017%29.svg.png",
+        "jarFileSize": 46472,
+        "fileHash": "sha256-a246eb1584cec9e69ba8c50136b9e8dc11a2fc0ab225710c31ad66c2ec4f4efe",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/krmardjoun/cloudstream-sources",
+        "fileSize": 13152,
+        "status": 1,
+        "authors": [
+            "KaifTaufiq"
+        ],
+        "tvTypes": [
+            "Other",
+            "Live",
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "YoutubeProvider",
+        "jarUrl": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/YoutubeProvider.jar",
+        "description": "Watch Youtube in Cloudstream",
+        "url": "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/YoutubeProvider.cs3",
+        "name": "YoutubeProvider",
+        "jarHash": "sha256-0d83e79f196464e50b8b1aa4c13683b2428fc3556651a0d190981c1149b3ea41"
+    }
+]
