@@ -75,9 +75,17 @@ class SiteTemplateProvider : MainAPI() {
             ?: return null
         val poster = this.selectFirst("img")?.attr("src")
 
-        return newMovieSearchResponse(title, fixUrl(link), TvType.Movie) {
-            this.posterUrl = poster?.let { fixUrl(it) }
+        return newMovieSearchResponse(title, abs(link), TvType.Movie) {
+            this.posterUrl = poster?.let { abs(it) }
         }
+    }
+
+    /** Rend une URL absolue (préfixe mainUrl si elle est relative). */
+    private fun abs(url: String): String = when {
+        url.startsWith("http") -> url
+        url.startsWith("//") -> "https:$url"
+        url.startsWith("/") -> mainUrl.trimEnd('/') + url
+        else -> mainUrl.trimEnd('/') + "/" + url
     }
 
     override suspend fun search(query: String, page: Int): SearchResponseList? {
@@ -98,7 +106,7 @@ class SiteTemplateProvider : MainAPI() {
 
         // Cas simple : un film. On passe l'URL de la page comme "data" pour loadLinks.
         return newMovieLoadResponse(title, url, TvType.Movie, url) {
-            this.posterUrl = poster?.let { fixUrl(it) }
+            this.posterUrl = poster?.let { abs(it) }
             this.plot = plot
         }
         // (Pour une série, on utiliserait newTvSeriesLoadResponse + une liste d'épisodes,
@@ -120,7 +128,7 @@ class SiteTemplateProvider : MainAPI() {
         for (iframe in iframes) {
             // loadExtractor reconnaît automatiquement beaucoup d'hébergeurs
             // et remplit `callback` avec les liens vidéo jouables.
-            if (loadExtractor(fixUrl(iframe), data, subtitleCallback, callback)) {
+            if (loadExtractor(abs(iframe), data, subtitleCallback, callback)) {
                 found = true
             }
         }
