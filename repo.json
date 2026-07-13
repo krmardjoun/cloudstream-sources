@@ -1,0 +1,8 @@
+{
+    "name": "Mes sources CloudStream",
+    "description": "Dépôt personnel d'extensions (IPTV, Internet Archive, etc.)",
+    "manifestVersion": 1,
+    "pluginLists": [
+        "https://raw.githubusercontent.com/krmardjoun/cloudstream-sources/builds/plugins.json"
+    ]
+}
