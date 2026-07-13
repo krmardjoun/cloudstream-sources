@@ -47,8 +47,21 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/src
           chmod +x gradlew
-          ./gradlew make makePluginsJson
-          ./gradlew ensureJarCompatibility
+          # jitpack sert la lib CloudStream à la volée et renvoie parfois 429/timeout.
+          # On réessaie avec un backoff pour absorber ces erreurs transitoires.
+          retry() {
+            local n=0
+            until [ "$n" -ge 6 ]; do
+              "$@" && return 0
+              n=$((n+1))
+              echo "::warning::Tentative $n échouée (probable 429/timeout jitpack). Nouvel essai dans $((n*30))s..."
+              sleep $((n*30))
+            done
+            echo "::error::Échec après 6 tentatives."
+            return 1
+          }
+          retry ./gradlew make makePluginsJson
+          retry ./gradlew ensureJarCompatibility
           cp **/build/*.cs3 $GITHUB_WORKSPACE/builds
           cp **/build/*.jar $GITHUB_WORKSPACE/builds
           cp build/plugins.json $GITHUB_WORKSPACE/builds
