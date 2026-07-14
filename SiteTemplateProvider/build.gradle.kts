@@ -1,5 +1,5 @@
 // Modèle / squelette : à copier et adapter pour un site que tu as le droit d'utiliser.
-version = 1
+version = 2
 
 cloudstream {
     description = "MODÈLE — squelette commenté pour scraper un site (à personnaliser)"
@@ -9,6 +9,7 @@ cloudstream {
     // ce qui est logique tant que ce n'est qu'un modèle non configuré.
     status = 3
 
+    language = "fr"
     // Adapte selon le contenu du site : "Movie", "TvSeries", "Anime", "Cartoon"...
     tvTypes = listOf("Movie", "TvSeries")
 

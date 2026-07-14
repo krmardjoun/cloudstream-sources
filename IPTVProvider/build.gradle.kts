@@ -1,5 +1,5 @@
 // Numéro de version : incrémente-le à chaque mise à jour pour que l'app propose l'update.
-version = 1
+version = 2
 
 cloudstream {
     description = "Lecteur IPTV / M3U — colle ta propre playlist (M3U ou Xtream)"
@@ -11,6 +11,7 @@ cloudstream {
      */
     status = 1
 
+    language = "fr"
     // Type affiché dans l'app (chaînes en direct)
     tvTypes = listOf("Live")
 

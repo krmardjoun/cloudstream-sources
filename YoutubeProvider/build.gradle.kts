@@ -1,5 +1,5 @@
 // Use an integer for version numbers
-version = 1
+version = 2
 
 cloudstream {
     // All of these properties are optional, you can safely remove any of them.
@@ -16,6 +16,7 @@ cloudstream {
      **/
     status = 1 // Will be 3 if unspecified
 
+    language = "en"
     tvTypes = listOf("Other", "Live", "TvSeries")
     iconUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/3840px-YouTube_full-color_icon_%282017%29.svg.png"
 
